@@ -10,19 +10,17 @@ int main() {
 	int r = 2 * n;
 	int g = 5 * n;
 	int b = 8 * n;
-	int tmp = k, cnt = 1;
+	int tmp = 0, cnt = 1;
 	while  (tmp < r) {
 		tmp += k;
 		cnt++;
 	}
-	tmp = k;
-	cnt++;
+	tmp = 0;
 	while  (tmp < g) {
 		tmp += k;
 		cnt++;
 	}
-	tmp = k;
-	cnt++;
+	tmp = 0;
 	while  (tmp < b) {
 		tmp += k;
 		cnt++;
