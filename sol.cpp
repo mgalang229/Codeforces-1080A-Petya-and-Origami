@@ -7,13 +7,26 @@ int main() {
 	cin.tie(0);
 	int n, k;
 	cin >> n >> k;
-	int ans = 0, cur = 0;
-	cur = 2 * n;
-	ans += (cur + k - 1) / k;
-	cur = 5 * n;
-	ans += (cur + k - 1) / k;
-	cur = 8 * n;
-	ans += (cur + k - 1) / k;
-	cout << ans << '\n';
+	int r = 2 * n;
+	int g = 5 * n;
+	int b = 8 * n;
+	int tmp = k, cnt = 1;
+	while  (tmp < r) {
+		tmp += k;
+		cnt++;
+	}
+	tmp = k;
+	cnt++;
+	while  (tmp < g) {
+		tmp += k;
+		cnt++;
+	}
+	tmp = k;
+	cnt++;
+	while  (tmp < b) {
+		tmp += k;
+		cnt++;
+	}
+	cout << cnt << '\n';
 	return 0;
 }
